@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  background-image: url("background.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(4, 91, 123);
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  border-bottom: solid black 2px;
+  z-index: 99 !important;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(4, 91, 123, 0.2);
+  backdrop-filter: blur(19px);
+  -webkit-backdrop-filter: blur(19px);
+}
+
+.navigation-hold {
+  gap: 20px;
+  display: flex;
+}
+
+.list-item {
+  list-style-type: none;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: solid white;
+  padding: 5px 8px;
+  transition: all 0.2s ease-in;
+  color: white;
+  background-color: transparent;
+}
+
+.list-item a:hover {
+  background-color: black;
+  color: white;
+  border: solid black;
+}
+
+.container {
+  max-width: 423px;
+  margin: 6rem auto;
+  min-height: 400px;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 40px 1px rgb(4, 91, 123);
+  box-shadow: 0 0 40px 1px black;
+  border-radius: 15px;
+  border: solid white;
+  background-color: rgba(4, 91, 123, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.main-index {
+  min-height: 100vh;
+  margin-top: 3.8rem;
+  backdrop-filter: blur(5px);
+}
+
+img {
+  width: 60px;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 7px 15px;
+  border-radius: 0;
+  cursor: pointer;
+  color: white;
+  border: solid white;
+  transition: all 0.2s ease-in;
+  border-radius: 41px;
+}
+
+input[type="submit"]:hover {
+  color: black;
+  background-color: white;
+}
+
+input {
+  padding: 0.5rem;
+  background-color: transparent;
+  border: solid white;
+  border-radius: 7px;
+  color: white;
+  font-size: 17px;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+select {
+  padding: 0.5rem;
+  background-color: transparent;
+  color: white;
+  border-radius: 6px;
+  border: solid white;
+  font-size: 16px;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.photo-upload {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.register-title {
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.connected {
+  background-color: green;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  top: 5rem;
+  left: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 5px white;
+  z-index: 9999;
+}
+
+footer {
+  padding: 26px 21px;
+  text-align: end;
+  background-color: rgba(4, 91, 123, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: black;
+  font-weight: bold;
+  border-top: solid black 2px;
+}
+
+h3 a {
+  color: rgb(98, 181, 209) !important;
+  text-underline-offset: 0.3rem;
+}
+
+.content-login {
+  margin-top: 14rem;
+}
+
+.table-wrapper {
+  padding: 0 10px;
+  overflow: auto;
+}
+table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+table th {
+  border: solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  padding: 5px 10px;
+  -webkit-backdrop-filter: blur(5px);
+}
+
+thead tr {
+  background-color: rgb(2, 52, 69, 0.3);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+thead tr th {
+  text-align: left;
+}
+
+table td {
+  border: solid rgba(255, 255, 255, 0.3);
+  padding: 5px 10px;
+  background-color: rgba(4, 91, 123, 0.4);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  color: black;
+}
+
+.img-inner {
+  width: 60px !important;
+  border-radius: 50%;
+}
+
+.delete-php {
+  position: relative;
+  border: none;
+  border-bottom: solid rgba(255, 255, 255, 0.3);
+  border-top: solid rgba(255, 255, 255, 0.3);
+}
+
+.delete-button {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  background-color: rgb(168, 11, 68, 0.8);
+}
+
+.dashboard {
+  padding: 3rem 1rem;
+  background-color: rgba(4, 91, 123, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.update-button {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  padding: 0 20px;
+  background-color: rgb(98, 181, 209);
+}
+
+table {
+  margin-left: 1rem;
+  overflow: scroll;
+}
+
+.btn-add_wrapper {
+  margin-left: 18px;
+  margin-top: 1.6rem;
+}
+
+.add-student {
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+  color: white;
+  padding: 5px 12px;
+  border: solid white;
+  background-color: rgba(4, 91, 123, 0.5);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+.add-student:hover {
+  background-color: rgba(4, 91, 123, 1);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  border: solid black !important;
+}
+
+.delete-button:hover {
+  background-color: rgb(168, 11, 68) !important;
+  color: white !important;
+}
+
+.update-button:hover {
+  background-color: rgb(4, 91, 123) !important;
+  color: white !important;
+}
+
+.act,
+.delete-php,
+.update-php {
+  border: none !important;
+}
+
+.act {
+  border: solid rgba(255, 255, 255, 0.4) !important;
+}
+
+.delete-php,
+.update-php {
+  border-bottom: solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.update-php {
+  border-right: solid rgba(255, 255, 255, 0.3) !important;
+  border-left: solid rgba(255, 255, 255, 0.3) !important;
+  border-left-style: dashed !important;
+}
+
+table th,
+table td {
+  font-size: clamp(14px, 3vw, 18px);
+}
+
+.p {
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+code {
+  background: rgb(53, 52, 52);
+  padding: 2px 6px;
+  padding-bottom: 3px;
+  border: solid lightgrey 0.8px;
+  border-radius: 9px;
+}
+
+.p ul ul {
+  padding-left: 2rem;
+  margin-top: 1rem;
+  list-style-type: decimal;
+}
+
+.table-holder table {
+  border: solid rgb(98, 181, 209) !important;
+  margin: 5rem 0.7rem;
+}
+.table-holder table tbody {
+  border: solid rgb(98, 181, 209) !important;
+}
+
+.table-holder td {
+  background-color: rgb(4, 91, 123);
+  background-color: rgba(4, 91, 123, 0.5);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: default;
+}
+
+.search {
+  max-width: 220px;
+}
+
+.fa-search {
+  color: white !important;
+  transition: all 0.2s ease-in;
+}
+
+.fa-search:hover {
+  color: black !important;
+}
+
+.serach-input {
+  display: inline-block;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "PT Sans", sans-serif;
+}
+
+.searching {
+  position: relative;
+}
+
+button {
+  position: absolute;
+  top: 3px;
+  right: 5px;
+  display: inline-block;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: black !important;
+}
